@@ -1,4 +1,14 @@
 import type { MetaFunction } from "@remix-run/node";
+import { json, useLoaderData } from "@remix-run/react";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+export const loader = async () => {
+  return json({
+    events: await prisma.almanac.findMany(),
+  });
+};
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,6 +18,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const data = useLoaderData<typeof loader>();
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>Welcome to Remix</h1>
@@ -35,6 +46,7 @@ export default function Index() {
             Remix Docs
           </a>
         </li>
+        <li>{JSON.stringify(data.events[0])}</li>
       </ul>
     </div>
   );
