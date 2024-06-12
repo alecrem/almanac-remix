@@ -5,8 +5,15 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export const loader = async () => {
+  const date = `${new Date().toISOString().substring(0, 10)}T00:00:00.000Z`;
   return json({
-    events: await prisma.almanac.findMany(),
+    events: await prisma.almanac.findFirst({
+      where: {
+        date: {
+          equals: date,
+        },
+      },
+    }),
   });
 };
 
@@ -46,7 +53,7 @@ export default function Index() {
             Remix Docs
           </a>
         </li>
-        <li>{JSON.stringify(data.events[0])}</li>
+        <li>{JSON.stringify(data.events)}</li>
       </ul>
     </div>
   );
