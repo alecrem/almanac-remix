@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { json, useLoaderData } from "@remix-run/react";
 import { PrismaClient } from "@prisma/client";
+import { DateBox } from "~/components";
 
 const prisma = new PrismaClient();
 
@@ -11,17 +12,27 @@ const options: Intl.DateTimeFormatOptions = {
   month: "numeric",
   day: "numeric",
 };
-const formatter = new Intl.DateTimeFormat(undefined, options);
+const dateFormatter = new Intl.DateTimeFormat(undefined, options);
+
 const getDateStringForTargetTimezone = (): string => {
-  const [rawMonth, rawDay, year] = formatter.format(new Date()).split("/");
+  const [rawMonth, rawDay, year] = dateFormatter.format(new Date()).split("/");
   const month = Number(rawMonth) > 9 ? rawMonth : `0${rawMonth}`;
   const day = Number(rawDay) > 9 ? rawDay : `0${rawDay}`;
   return `${year}-${month}-${day}T00:00:00.000Z`;
 };
 
+type AlmanacEvent = {
+  events: {
+    id: number;
+    date: string | Date;
+    title: string | null;
+    notes: string | null;
+  } | null;
+};
+
 export const loader = async () => {
   const date = getDateStringForTargetTimezone();
-  return json({
+  const data: AlmanacEvent = await json({
     events: await prisma.almanac.findFirst({
       where: {
         date: {
@@ -29,7 +40,16 @@ export const loader = async () => {
         },
       },
     }),
-  });
+  }).json();
+  const returnedDate: string | Date | undefined = data.events?.date;
+  if (typeof returnedDate !== "string") {
+    return { month: "00", day: "00", title: "Error" };
+  }
+  return {
+    month: returnedDate.substring(5, 7),
+    day: returnedDate.substring(8, 10),
+    title: data.events?.title,
+  };
 };
 
 export const meta: MetaFunction = () => {
@@ -39,7 +59,11 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
-  const data = useLoaderData<typeof loader>();
-  return <>{JSON.stringify(data.events)}</>;
+export default function Today() {
+  const { month, day, title } = useLoaderData<typeof loader>();
+  return (
+    <>
+      <DateBox date={day} month={month} event={title || ""} />
+    </>
+  );
 }
