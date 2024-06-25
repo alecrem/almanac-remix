@@ -5,6 +5,10 @@ import { DateBox } from "~/components";
 
 const prisma = new PrismaClient();
 
+const siteTitle = process.env.SITE_TITLE || "Remix Almanac";
+const siteDescription =
+  process.env.SITE_DESCRIPTION ||
+  "Daily almanac site made with Remix and supabase";
 const timezone = process.env.TIMEZONE;
 const options: Intl.DateTimeFormatOptions = {
   timeZone: timezone,
@@ -54,8 +58,8 @@ export const loader = async () => {
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: siteTitle },
+    { name: "description", content: siteDescription },
   ];
 };
 
