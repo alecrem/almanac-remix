@@ -1,4 +1,4 @@
-import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
+import type { LoaderFunctionArgs, MetaFunction } from "@vercel/remix";
 import { json, useLoaderData } from "@remix-run/react";
 
 const siteTitle = process.env.SITE_TITLE || "Remix Almanac";
