@@ -1,38 +1,14 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { json, useLoaderData } from "@remix-run/react";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
 
 const siteTitle = process.env.SITE_TITLE || "Remix Almanac";
 const siteDescription =
   process.env.SITE_DESCRIPTION ||
   "Daily almanac site made with Remix and supabase";
-const timezone = process.env.TIMEZONE;
-const options: Intl.DateTimeFormatOptions = {
-  timeZone: timezone,
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
-};
-const formatter = new Intl.DateTimeFormat(undefined, options);
-const getDateStringForTargetTimezone = (): string => {
-  const [rawMonth, rawDay, year] = formatter.format(new Date()).split("/");
-  const month = Number(rawMonth) > 9 ? rawMonth : `0${rawMonth}`;
-  const day = Number(rawDay) > 9 ? rawDay : `0${rawDay}`;
-  return `${year}-${month}-${day}T00:00:00.000Z`;
-};
 
-export const loader = async () => {
-  const date = getDateStringForTargetTimezone();
+export const loader = async ({ request }: LoaderFunctionArgs) => {
   return json({
-    events: await prisma.almanac.findFirst({
-      where: {
-        date: {
-          equals: date,
-        },
-      },
-    }),
+    url: request.url,
   });
 };
 
@@ -44,13 +20,30 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const data = useLoaderData<typeof loader>();
+  const { url } = useLoaderData<typeof loader>();
+  const iframeUrl = `${url}today`;
+  const iframeCode = `<iframe title="${siteTitle}" src="${iframeUrl}" height="380" width="380" frameBorder="0" scrolling="no" style="border: 0; overflow: hidden;" />`;
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>{siteTitle}</h1>
-      <ul>
-        <li>{JSON.stringify(data.events)}</li>
-      </ul>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <iframe
+          title={siteTitle}
+          src={iframeUrl}
+          height="380"
+          width="380"
+          style={{ border: 0, overflow: "hidden" }}
+          frameBorder={0}
+          scrolling="no"
+        />
+        <textarea
+          rows={5}
+          style={{
+            width: "372px",
+          }}
+          value={iframeCode}
+        ></textarea>
+      </div>
     </div>
   );
 }
