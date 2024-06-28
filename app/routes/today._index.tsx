@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction, HeadersFunction } from "@vercel/remix";
 import { json, useLoaderData } from "@remix-run/react";
 import { PrismaClient } from "@prisma/client";
 import { DateBox } from "~/components";
@@ -55,6 +55,11 @@ export const loader = async () => {
     title: data.events?.title,
   };
 };
+
+export const headers: HeadersFunction = () => ({
+  "Content-Security-Policy": "frame-ancestors *",
+  "X-Frame-Options": "SAMEORIGIN",
+});
 
 export const meta: MetaFunction = () => {
   return [
