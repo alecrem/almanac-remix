@@ -57,7 +57,8 @@ export const loader = async () => {
 };
 
 export const headers: HeadersFunction = () => ({
-  "Content-Security-Policy": "frame-ancestors *;",
+  "Content-Security-Policy": "frame-ancestors *",
+  "X-Frame-Options": "SAMEORIGIN",
 });
 
 export const meta: MetaFunction = () => {

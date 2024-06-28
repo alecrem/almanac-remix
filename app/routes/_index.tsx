@@ -42,6 +42,7 @@ export default function Index() {
             width: "372px",
           }}
           value={iframeCode}
+          readOnly
         ></textarea>
       </div>
     </div>
