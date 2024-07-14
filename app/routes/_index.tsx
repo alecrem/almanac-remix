@@ -23,8 +23,22 @@ export default function Index() {
   const { url } = useLoaderData<typeof loader>();
   const iframeUrl = `${url}today`;
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+    <div
+      style={{
+        fontFamily: "system-ui, sans-serif",
+        lineHeight: "1.8",
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          padding: 0,
+          margin: 0,
+        }}
+      >
         <iframe
           title={siteTitle}
           src={iframeUrl}
