@@ -16,10 +16,10 @@ const options: Intl.DateTimeFormatOptions = {
   month: "numeric",
   day: "numeric",
 };
-const dateFormatter = new Intl.DateTimeFormat(undefined, options);
+const dateFormatter = new Intl.DateTimeFormat("es-ES", options);
 
 const getDateStringForTargetTimezone = (): string => {
-  const [rawMonth, rawDay, year] = dateFormatter.format(new Date()).split("/");
+  const [rawDay, rawMonth, year] = dateFormatter.format(new Date()).split("/");
   const month = Number(rawMonth) > 9 ? rawMonth : `0${rawMonth}`;
   const day = Number(rawDay) > 9 ? rawDay : `0${rawDay}`;
   return `${year}-${month}-${day}T00:00:00.000Z`;
