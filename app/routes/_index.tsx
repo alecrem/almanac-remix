@@ -42,8 +42,8 @@ export default function Index() {
         <iframe
           title={siteTitle}
           src={iframeUrl}
-          height="380"
-          width="380"
+          height="384"
+          width="384"
           style={{ border: 0, overflow: "hidden" }}
           frameBorder={0}
           scrolling="no"
