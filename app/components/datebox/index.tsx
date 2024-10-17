@@ -12,7 +12,7 @@ const DateBox = (props: Props) => {
           <h2 className={"text-black text-5xl font-bold text-right"}>
             {props.date}/{props.month}
           </h2>
-          <p className={"pt-16 text-lg font-light"}>{props.event}</p>
+          <p className={"mt-16 text-lg font-light"}>{props.event}</p>
         </div>
       </div>
     </article>
