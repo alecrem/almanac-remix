@@ -1,0 +1,40 @@
+.layout {
+	width:100vw;
+	height:320px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #FFF;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.layout > div {
+	width:calc(100vw - 40px);
+	height:280px;
+	background:white;
+	
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	padding: 22px;
+}
+
+.layout > div > h2 {
+	font-family:Inter, Helvetica, Arial, sans-serif;
+	font-size:32px;
+	font-weight:700;
+	
+	display: inherit;
+	align-self: flex-end;
+}
+
+.layout > div > p {
+	font-family:Inter, Helvetica, Arial, sans-serif;
+	font-size:16px;
+	font-weight:400;
+  	line-height: 140%;
+	
+	position: relative;
+	margin-bottom: 100px;
+}
