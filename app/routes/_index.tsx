@@ -1,22 +1,12 @@
-import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
-import { json, useLoaderData } from "@remix-run/react";
+import type { LoaderFunctionArgs } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
 
 const siteTitle = process.env.SITE_TITLE || "Remix Almanac";
-const siteDescription =
-  process.env.SITE_DESCRIPTION ||
-  "Daily almanac site made with Remix and supabase";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  return json({
+  return {
     url: request.url,
-  });
-};
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: siteTitle },
-    { name: "description", content: siteDescription },
-  ];
+  };
 };
 
 export default function Index() {
