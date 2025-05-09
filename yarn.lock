@@ -1159,12 +1159,25 @@
     stream-slice "^0.1.2"
     undici "^6.11.1"
 
-"@remix-run/node@2.16.5", "@remix-run/node@^2.16.5":
+"@remix-run/node@2.16.5":
   version "2.16.5"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.16.5.tgz#aadbe40759bf701098a8867ca3ae7282590f9d57"
   integrity sha512-awunS1kgFmc8q7sGz7FpGf66RXQm2Vw0yk5IFTIJa0WdQrskqyF/6CO+tEf/0np/OCu2fQ23+EfxY2qGHm1aOg==
   dependencies:
     "@remix-run/server-runtime" "2.16.5"
+    "@remix-run/web-fetch" "^4.4.2"
+    "@web3-storage/multipart-parser" "^1.0.0"
+    cookie-signature "^1.1.0"
+    source-map-support "^0.5.21"
+    stream-slice "^0.1.2"
+    undici "^6.21.2"
+
+"@remix-run/node@^2.16.6":
+  version "2.16.6"
+  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.16.6.tgz#3d0594c9791304d0fae4f1cb62628e0bd8eeb5c5"
+  integrity sha512-agIR9duqTWAeYMUj2myuLCNdedMEhLUCKOfOb7IwC/o4cp0D2I6hXOQfJKQHevnui1dPUlxWhsz/rc69wQF0BA==
+  dependencies:
+    "@remix-run/server-runtime" "2.16.6"
     "@remix-run/web-fetch" "^4.4.2"
     "@web3-storage/multipart-parser" "^1.0.0"
     cookie-signature "^1.1.0"
@@ -1227,6 +1240,19 @@
     set-cookie-parser "^2.4.8"
     source-map "^0.7.3"
     turbo-stream "2.4.0"
+
+"@remix-run/server-runtime@2.16.6":
+  version "2.16.6"
+  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-2.16.6.tgz#cefceef352a45fd8cf5bd40328cccd0ee66fdce9"
+  integrity sha512-EAD21CDrrTvaC2FznMDcVza12DgUUdGkR1kSM75ZrIy9sJaWKpiTqBitKoIjw1K89IPCM7xZTAEvpDxIWitULg==
+  dependencies:
+    "@remix-run/router" "1.23.0"
+    "@types/cookie" "^0.6.0"
+    "@web3-storage/multipart-parser" "^1.0.0"
+    cookie "^0.7.2"
+    set-cookie-parser "^2.4.8"
+    source-map "^0.7.3"
+    turbo-stream "2.4.1"
 
 "@remix-run/web-blob@^3.1.0":
   version "3.1.0"
@@ -6547,6 +6573,11 @@ turbo-stream@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/turbo-stream/-/turbo-stream-2.4.0.tgz#1e4fca6725e90fa14ac4adb782f2d3759a5695f0"
   integrity sha512-FHncC10WpBd2eOmGwpmQsWLDoK4cqsA/UT/GqNoaKOQnT8uzhtCbg3EoUDMvqpOSAI0S26mr0rkjzbOO6S3v1g==
+
+turbo-stream@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/turbo-stream/-/turbo-stream-2.4.1.tgz#c1a64397724084c09b0f6ea4a2c528d3f67931f9"
+  integrity sha512-v8kOJXpG3WoTN/+at8vK7erSzo6nW6CIaeOvNOkHQVDajfz1ZVeSxCbc6tOH4hrGZW7VUCV0TOXd8CPzYnYkrw==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
