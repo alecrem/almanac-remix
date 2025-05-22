@@ -1194,13 +1194,13 @@
     stream-slice "^0.1.2"
     undici "^6.21.2"
 
-"@remix-run/react@^2.16.6":
-  version "2.16.6"
-  resolved "https://registry.yarnpkg.com/@remix-run/react/-/react-2.16.6.tgz#03e7650436e05b83ac9c861f6fc2cc554dec8e1a"
-  integrity sha512-9wrv1E6316ptN20U3wPLm3tRhUyv0AUh1OBxq/dGwEJOMp922aQw2HSYwzYBl00blrVnQVLz1hNfVLIUzBEFzw==
+"@remix-run/react@^2.16.7":
+  version "2.16.7"
+  resolved "https://registry.yarnpkg.com/@remix-run/react/-/react-2.16.7.tgz#cf74612dd0a4bfa4969970f8e07898b74c3d9463"
+  integrity sha512-xEukrPCE/S0J09ekSwKU+UHyFdjDRmtfzeeIwboELSbAXpgzYMOW2jal6H6RonVkGg/8Zp1MjqIcqM80+dvQPQ==
   dependencies:
     "@remix-run/router" "1.23.0"
-    "@remix-run/server-runtime" "2.16.6"
+    "@remix-run/server-runtime" "2.16.7"
     react-router "6.30.0"
     react-router-dom "6.30.0"
     turbo-stream "2.4.1"
