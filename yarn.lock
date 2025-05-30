@@ -1189,7 +1189,7 @@
     stream-slice "^0.1.2"
     undici "^6.21.2"
 
-"@remix-run/node@2.16.8", "@remix-run/node@^2.16.7":
+"@remix-run/node@2.16.8", "@remix-run/node@^2.16.8":
   version "2.16.8"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.16.8.tgz#a008168f40390376cdecff0e1c5f9df9d5b34f06"
   integrity sha512-foeYXU3mdaBJZnbtGbM8mNdHowz2+QnVGDRo7P3zgFkmsccMEflArGZNbkACGKd9xwDguTxxMJ6cuXBC4jIfgQ==
