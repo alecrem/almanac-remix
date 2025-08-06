@@ -1065,10 +1065,10 @@
   dependencies:
     "@prisma/debug" "6.13.0"
 
-"@remix-run/dev@^2.16.8":
-  version "2.16.8"
-  resolved "https://registry.yarnpkg.com/@remix-run/dev/-/dev-2.16.8.tgz#575fbdc0f7a6c4bd88eed12ff3cf12dd449a2b1f"
-  integrity sha512-2EKByaD5CDwh7H56UFVCqc90kCZ9LukPlSwkcsR3gj7WlfL7sXtcIqIopcToAlKAeao3HDbhBlBT2CTOivxZCg==
+"@remix-run/dev@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/dev/-/dev-2.17.0.tgz#2892d35f1a750a097de0bc2f8a38f5d00bbca466"
+  integrity sha512-L2W8PYH3jUvCKlJeUkFMGyOMzUsM0goZg4n0NU69O85TNlB1jgiqSbSMb69xhviphGpwzAoH+D/p3/cUnw4DbQ==
   dependencies:
     "@babel/core" "^7.21.8"
     "@babel/generator" "^7.21.5"
@@ -1080,9 +1080,9 @@
     "@babel/types" "^7.22.5"
     "@mdx-js/mdx" "^2.3.0"
     "@npmcli/package-json" "^4.0.1"
-    "@remix-run/node" "2.16.8"
+    "@remix-run/node" "2.17.0"
     "@remix-run/router" "1.23.0"
-    "@remix-run/server-runtime" "2.16.8"
+    "@remix-run/server-runtime" "2.17.0"
     "@types/mdx" "^2.0.5"
     "@vanilla-extract/integration" "^6.2.0"
     arg "^5.0.1"
@@ -1134,19 +1134,6 @@
   dependencies:
     "@remix-run/node" "2.17.0"
 
-"@remix-run/node@2.16.8":
-  version "2.16.8"
-  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.16.8.tgz#a008168f40390376cdecff0e1c5f9df9d5b34f06"
-  integrity sha512-foeYXU3mdaBJZnbtGbM8mNdHowz2+QnVGDRo7P3zgFkmsccMEflArGZNbkACGKd9xwDguTxxMJ6cuXBC4jIfgQ==
-  dependencies:
-    "@remix-run/server-runtime" "2.16.8"
-    "@remix-run/web-fetch" "^4.4.2"
-    "@web3-storage/multipart-parser" "^1.0.0"
-    cookie-signature "^1.1.0"
-    source-map-support "^0.5.21"
-    stream-slice "^0.1.2"
-    undici "^6.21.2"
-
 "@remix-run/node@2.17.0", "@remix-run/node@^2.17.0":
   version "2.17.0"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-2.17.0.tgz#96fdf1c31acb2dc04b06178493b5d1862e5dec00"
@@ -1189,19 +1176,6 @@
     get-port "5.1.1"
     morgan "^1.10.0"
     source-map-support "^0.5.21"
-
-"@remix-run/server-runtime@2.16.8":
-  version "2.16.8"
-  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-2.16.8.tgz#79fe6274a37a5f5e18db6cb867b127b364a957da"
-  integrity sha512-ZwWOam4GAQTx10t+wK09YuYctd2Koz5Xy/klDgUN3lmTXmwbV0tZU0baiXEqZXrvyD+WDZ4b0ADDW9Df3+dpzA==
-  dependencies:
-    "@remix-run/router" "1.23.0"
-    "@types/cookie" "^0.6.0"
-    "@web3-storage/multipart-parser" "^1.0.0"
-    cookie "^0.7.2"
-    set-cookie-parser "^2.4.8"
-    source-map "^0.7.3"
-    turbo-stream "2.4.1"
 
 "@remix-run/server-runtime@2.17.0":
   version "2.17.0"
@@ -2642,12 +2616,7 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
-dotenv@^16.0.0:
-  version "16.4.7"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.7.tgz#0e20c5b82950140aa99be360a8a5f52335f53c26"
-  integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
-
-dotenv@^16.6.1:
+dotenv@^16.0.0, dotenv@^16.6.1:
   version "16.6.1"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.6.1.tgz#773f0e69527a8315c7285d5ee73c4459d20a8020"
   integrity sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==
