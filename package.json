@@ -15,7 +15,7 @@
     "@prisma/client": "^6.16.2",
     "@remix-run/node": "^2.17.0",
     "@remix-run/react": "^2.17.0",
-    "@remix-run/serve": "^2.17.0",
+    "@remix-run/serve": "^2.17.1",
     "@tailwindcss/postcss": "^4.1.13",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
