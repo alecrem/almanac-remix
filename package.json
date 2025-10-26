@@ -17,7 +17,7 @@
     "@remix-run/react": "^2.16.7",
     "@remix-run/serve": "^2.16.7",
     "@remix-run/server-runtime": "^2.16.7",
-    "@tailwindcss/postcss": "^4.1.14",
+    "@tailwindcss/postcss": "^4.1.16",
     "@typescript-eslint/eslint-plugin": "^8.46.1",
     "@typescript-eslint/parser": "^8.46.2",
     "@vercel/remix": "^2.16.7",
