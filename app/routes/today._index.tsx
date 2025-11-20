@@ -1,9 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { json, useLoaderData } from "@remix-run/react";
-import { PrismaClient } from "@prisma/client";
 import { DateBox } from "~/components";
-
-const prisma = new PrismaClient();
+import { prisma } from "~/lib/db.server";
 
 const siteTitle = process.env.SITE_TITLE || "Remix Almanac";
 const siteDescription =
