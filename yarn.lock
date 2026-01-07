@@ -1498,10 +1498,23 @@
     morgan "^1.10.1"
     source-map-support "^0.5.21"
 
-"@remix-run/server-runtime@2.17.2", "@remix-run/server-runtime@^2.16.7":
+"@remix-run/server-runtime@2.17.2":
   version "2.17.2"
   resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-2.17.2.tgz#0f10520ee5517f5e39294b2c0df000c3d8cabba0"
   integrity sha512-dTrAG1SgOLgz1DFBDsLHN0V34YqLsHEReVHYOI4UV/p+ALbn/BRQMw1MaUuqGXmX21ZTuCzzPegtTLNEOc8ixA==
+  dependencies:
+    "@remix-run/router" "1.23.0"
+    "@types/cookie" "^0.6.0"
+    "@web3-storage/multipart-parser" "^1.0.0"
+    cookie "^0.7.2"
+    set-cookie-parser "^2.4.8"
+    source-map "^0.7.3"
+    turbo-stream "2.4.1"
+
+"@remix-run/server-runtime@^2.17.3":
+  version "2.17.3"
+  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-2.17.3.tgz#3eb185669ee15d7c71928b640135bf544ddeea40"
+  integrity sha512-8uuV0COprImDpyDB8Rx0VLDKxsttBsMjtdv9BFViz8WfJz79jr8YRfp27hXUs9P4/NU6+wQQYcJawkBj/5uuSg==
   dependencies:
     "@remix-run/router" "1.23.0"
     "@types/cookie" "^0.6.0"
