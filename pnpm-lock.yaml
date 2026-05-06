@@ -39,8 +39,8 @@ importers:
         specifier: ^2.16.7
         version: 2.16.7(@remix-run/dev@2.17.4(@remix-run/react@2.17.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.9.3))(@remix-run/serve@2.17.4(typescript@5.9.3))(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)(yaml@2.7.0))(yaml@2.7.0))(@remix-run/node@2.17.4(typescript@5.9.3))(@remix-run/server-runtime@2.17.4(typescript@5.9.3))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       isbot:
-        specifier: ^5.1.39
-        version: 5.1.39
+        specifier: ^5.1.40
+        version: 5.1.40
       pg:
         specifier: ^8.20.0
         version: 8.20.0
@@ -3006,8 +3006,8 @@ packages:
     resolution: {integrity: sha512-vne1mzQUTR+qsMLeCBL9+/tgnDXRyc2pygLGl/WsgA+EZKIiB5Ehu0CiVTHIIk30zhJ24uGz4M5Ppse37aR0Hg==}
     engines: {node: '>=12'}
 
-  isbot@5.1.39:
-    resolution: {integrity: sha512-obH0yYahGXdzNxo+djmHhBYThUKDkz565cxkIlt2L9hXfv1NlaLKoDBHo6KxXsYrIXx2RK3x5vY36CfZcobxEw==}
+  isbot@5.1.40:
+    resolution: {integrity: sha512-yNeeynhhtIVRBk12tBV4eHNxwB42HzR4Q3Ea7vCOiJhImGaAIdIMrbJtacQlBizGLjUPw+akkFI5Dn9T70XoVQ==}
     engines: {node: '>=18'}
 
   isexe@2.0.0:
@@ -7848,7 +7848,7 @@ snapshots:
 
   isbot@3.8.0: {}
 
-  isbot@5.1.39: {}
+  isbot@5.1.40: {}
 
   isexe@2.0.0: {}
 
