@@ -23,7 +23,7 @@
     "@typescript-eslint/parser": "^8.59.3",
     "@vercel/remix": "^2.16.7",
     "isbot": "^5.1.40",
-    "pg": "^8.20.0",
+    "pg": "^8.21.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
