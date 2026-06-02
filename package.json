@@ -14,7 +14,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
-    "@remix-run/node": "^2.17.4",
+    "@remix-run/node": "^2.17.5",
     "@remix-run/react": "^2.17.4",
     "@remix-run/serve": "^2.17.4",
     "@remix-run/server-runtime": "^2.16.7",
