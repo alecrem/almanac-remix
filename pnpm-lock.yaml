@@ -13,13 +13,13 @@ importers:
         version: 7.8.0
       '@prisma/client':
         specifier: ^7.8.0
-        version: 7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(typescript@5.9.3)
+        version: 7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(typescript@5.9.3)
       '@remix-run/node':
         specifier: ^2.17.5
         version: 2.17.5(typescript@5.9.3)
       '@remix-run/react':
         specifier: ^2.17.4
-        version: 2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
+        version: 2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
       '@remix-run/serve':
         specifier: ^2.17.5
         version: 2.17.5(typescript@5.9.3)
@@ -37,7 +37,7 @@ importers:
         version: 8.60.0(eslint@9.39.2(jiti@2.7.0))(typescript@5.9.3)
       '@vercel/remix':
         specifier: ^2.16.7
-        version: 2.16.7(@remix-run/dev@2.17.5(@remix-run/react@2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0))(@remix-run/node@2.17.5(typescript@5.9.3))(@remix-run/server-runtime@2.17.4(typescript@5.9.3))(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+        version: 2.16.7(@remix-run/dev@2.17.5(@remix-run/react@2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0))(@remix-run/node@2.17.5(typescript@5.9.3))(@remix-run/server-runtime@2.17.4(typescript@5.9.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       isbot:
         specifier: ^5.1.40
         version: 5.1.40
@@ -48,12 +48,12 @@ importers:
         specifier: ^19.2.7
         version: 19.2.7
       react-dom:
-        specifier: ^19.2.6
-        version: 19.2.6(react@19.2.7)
+        specifier: ^19.2.7
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.17.5
-        version: 2.17.5(@remix-run/react@2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0)
+        version: 2.17.5(@remix-run/react@2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0)
       '@types/pg':
         specifier: ^8.20.0
         version: 8.20.0
@@ -89,7 +89,7 @@ importers:
         version: 8.5.15
       prisma:
         specifier: ^7.8.0
-        version: 7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
+        version: 7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
       tailwindcss:
         specifier: ^4.3.0
         version: 4.3.0
@@ -3857,10 +3857,10 @@ packages:
   rc9@3.0.1:
     resolution: {integrity: sha512-gMDyleLWVE+i6Sgtc0QbbY6pEKqYs97NGi6isHQPqYlLemPoO8dxQ3uGi0f4NiP98c+jMW6cG1Kx9dDwfvqARQ==}
 
-  react-dom@19.2.6:
-    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.6
+      react: ^19.2.7
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -5331,11 +5331,11 @@ snapshots:
 
   '@prisma/client-runtime-utils@7.8.0': {}
 
-  '@prisma/client@7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(typescript@5.9.3)':
+  '@prisma/client@7.8.0(prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@prisma/client-runtime-utils': 7.8.0
     optionalDependencies:
-      prisma: 7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
+      prisma: 7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
       typescript: 5.9.3
 
   '@prisma/config@7.8.0':
@@ -5409,13 +5409,13 @@ snapshots:
       env-paths: 3.0.0
       proper-lockfile: 4.1.2
 
-  '@prisma/studio-core@0.27.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)':
+  '@prisma/studio-core@0.27.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@radix-ui/react-toggle': 1.1.10(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      '@radix-ui/react-toggle': 1.1.10(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@types/react': 19.2.16
       chart.js: 4.5.1
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
     transitivePeerDependencies:
       - '@types/react-dom'
 
@@ -5427,11 +5427,11 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.16
 
-  '@radix-ui/react-primitive@2.1.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)':
+  '@radix-ui/react-primitive@2.1.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@radix-ui/react-slot': 1.2.3(@types/react@19.2.16)(react@19.2.7)
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
     optionalDependencies:
       '@types/react': 19.2.16
       '@types/react-dom': 19.2.3(@types/react@19.2.16)
@@ -5443,13 +5443,13 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.16
 
-  '@radix-ui/react-toggle@1.1.10(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)':
+  '@radix-ui/react-toggle@1.1.10(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.16)(react@19.2.7)
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
     optionalDependencies:
       '@types/react': 19.2.16
       '@types/react-dom': 19.2.3(@types/react@19.2.16)
@@ -5475,7 +5475,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.16
 
-  '@remix-run/dev@2.17.5(@remix-run/react@2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0)':
+  '@remix-run/dev@2.17.5(@remix-run/react@2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0)':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/generator': 7.29.7
@@ -5488,7 +5488,7 @@ snapshots:
       '@mdx-js/mdx': 2.3.0
       '@npmcli/package-json': 4.0.1
       '@remix-run/node': 2.17.5(typescript@5.9.3)
-      '@remix-run/react': 2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
+      '@remix-run/react': 2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)
       '@remix-run/router': 1.23.3
       '@remix-run/server-runtime': 2.17.5(typescript@5.9.3)
       '@types/mdx': 2.0.13
@@ -5576,14 +5576,14 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@remix-run/react@2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3)':
+  '@remix-run/react@2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3)':
     dependencies:
       '@remix-run/router': 1.23.2
       '@remix-run/server-runtime': 2.17.4(typescript@5.9.3)
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       react-router: 6.30.3(react@19.2.7)
-      react-router-dom: 6.30.3(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      react-router-dom: 6.30.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       turbo-stream: 2.4.1
     optionalDependencies:
       typescript: 5.9.3
@@ -6146,15 +6146,15 @@ snapshots:
 
   '@vanilla-extract/private@1.0.9': {}
 
-  '@vercel/remix@2.16.7(@remix-run/dev@2.17.5(@remix-run/react@2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0))(@remix-run/node@2.17.5(typescript@5.9.3))(@remix-run/server-runtime@2.17.4(typescript@5.9.3))(react-dom@19.2.6(react@19.2.7))(react@19.2.7)':
+  '@vercel/remix@2.16.7(@remix-run/dev@2.17.5(@remix-run/react@2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0))(@remix-run/node@2.17.5(typescript@5.9.3))(@remix-run/server-runtime@2.17.4(typescript@5.9.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
-      '@remix-run/dev': 2.17.5(@remix-run/react@2.17.4(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0)
+      '@remix-run/dev': 2.17.5(@remix-run/react@2.17.4(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3))(@remix-run/serve@2.17.5(typescript@5.9.3))(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(typescript@5.9.3)(vite@7.3.2(@types/node@25.9.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))(yaml@2.9.0)
       '@remix-run/node': 2.17.5(typescript@5.9.3)
       '@remix-run/server-runtime': 2.17.4(typescript@5.9.3)
       '@vercel/static-config': 3.0.0
       isbot: 3.8.0
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       ts-morph: 12.0.0
 
   '@vercel/static-config@3.0.0':
@@ -8653,12 +8653,12 @@ snapshots:
     dependencies:
       parse-ms: 2.1.0
 
-  prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(typescript@5.9.3):
+  prisma@7.8.0(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@5.9.3):
     dependencies:
       '@prisma/config': 7.8.0
       '@prisma/dev': 0.24.3(typescript@5.9.3)
       '@prisma/engines': 7.8.0
-      '@prisma/studio-core': 0.27.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      '@prisma/studio-core': 0.27.3(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       mysql2: 3.15.3
       postgres: 3.4.7
     optionalDependencies:
@@ -8742,7 +8742,7 @@ snapshots:
       defu: 6.1.7
       destr: 2.0.5
 
-  react-dom@19.2.6(react@19.2.7):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
       react: 19.2.7
       scheduler: 0.27.0
@@ -8751,11 +8751,11 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react-router-dom@6.30.3(react-dom@19.2.6(react@19.2.7))(react@19.2.7):
+  react-router-dom@6.30.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@remix-run/router': 1.23.2
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       react-router: 6.30.3(react@19.2.7)
 
   react-router@6.30.3(react@19.2.7):
