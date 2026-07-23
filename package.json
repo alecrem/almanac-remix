@@ -24,7 +24,7 @@
     "@vercel/remix": "^2.16.7",
     "isbot": "^5.2.1",
     "pg": "^8.22.0",
-    "react": "^19.2.7",
+    "react": "^19.2.8",
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
