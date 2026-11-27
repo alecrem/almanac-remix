@@ -3478,8 +3478,8 @@ packages:
   modern-ahocorasick@1.1.0:
     resolution: {integrity: sha512-sEKPVl2rM+MNVkGQt3ChdmD8YsigmXdn5NifZn6jiwn9LRJpWm8F3guhaqrJT/JOat6pwpbXEk6kv+b9DMIjsQ==}
 
-  morgan@1.11.0:
-    resolution: {integrity: sha512-zSkVu3t18r39pw4ixfBKvfZi3y2UOqr7d4WYwcj3m8nXpEQK4rPO6GLzs/CExoRgmX3y9EjmmcXqv6jq0SK46g==}
+  morgan@1.12.1:
+    resolution: {integrity: sha512-tljKC0ex20AjO58Ob/eZ53JloycbVswbVNCHx6V6VLGzqt/w8dIynVGL0G8qVjNKwiA7sYSogCrN6QtJ82IV+g==}
     engines: {node: '>= 0.8.0'}
 
   mri@1.2.0:
@@ -5682,7 +5682,7 @@ snapshots:
       compression: 1.8.2(supports-color@7.2.0)
       express: 4.22.2(supports-color@7.2.0)
       get-port: 5.1.1
-      morgan: 1.11.0(supports-color@7.2.0)
+      morgan: 1.12.1(supports-color@7.2.0)
       source-map-support: 0.5.21
     transitivePeerDependencies:
       - supports-color
@@ -8508,7 +8508,7 @@ snapshots:
 
   modern-ahocorasick@1.1.0: {}
 
-  morgan@1.11.0(supports-color@7.2.0):
+  morgan@1.12.1(supports-color@7.2.0):
     dependencies:
       basic-auth: 2.0.1
       debug: 2.6.9(supports-color@7.2.0)
